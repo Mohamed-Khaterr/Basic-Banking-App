@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		01119B4F2962F90F006792A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B4E2962F90F006792A3 /* AppDelegate.swift */; };
 		01119B512962F90F006792A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B502962F90F006792A3 /* SceneDelegate.swift */; };
-		01119B532962F90F006792A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B522962F90F006792A3 /* ViewController.swift */; };
+		01119B532962F90F006792A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B522962F90F006792A3 /* HomeViewController.swift */; };
 		01119B562962F90F006792A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01119B542962F90F006792A3 /* Main.storyboard */; };
 		01119B582962F910006792A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01119B572962F910006792A3 /* Assets.xcassets */; };
 		01119B5B2962F910006792A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01119B592962F910006792A3 /* LaunchScreen.storyboard */; };
+		01119B682962FA5C006792A3 /* TransfareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B672962FA5C006792A3 /* TransfareViewController.swift */; };
+		01119B6A29630F62006792A3 /* TranfareHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B6929630F62006792A3 /* TranfareHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01119B4B2962F90F006792A3 /* Basic Banking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basic Banking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01119B4E2962F90F006792A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01119B502962F90F006792A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01119B522962F90F006792A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01119B522962F90F006792A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		01119B552962F90F006792A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01119B572962F910006792A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01119B5A2962F910006792A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01119B5C2962F910006792A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01119B672962FA5C006792A3 /* TransfareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfareViewController.swift; sourceTree = "<group>"; };
+		01119B6929630F62006792A3 /* TranfareHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranfareHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		01119B4D2962F90F006792A3 /* Basic Banking App */ = {
 			isa = PBXGroup;
 			children = (
-				01119B4E2962F90F006792A3 /* AppDelegate.swift */,
-				01119B502962F90F006792A3 /* SceneDelegate.swift */,
-				01119B522962F90F006792A3 /* ViewController.swift */,
-				01119B542962F90F006792A3 /* Main.storyboard */,
-				01119B572962F910006792A3 /* Assets.xcassets */,
-				01119B592962F910006792A3 /* LaunchScreen.storyboard */,
+				01119B652962F9ED006792A3 /* Resources */,
+				01119B642962F9DB006792A3 /* Model */,
+				01119B632962F9CD006792A3 /* View */,
+				01119B622962F9B7006792A3 /* Controller */,
 				01119B5C2962F910006792A3 /* Info.plist */,
 			);
 			path = "Basic Banking App";
+			sourceTree = "<group>";
+		};
+		01119B622962F9B7006792A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01119B522962F90F006792A3 /* HomeViewController.swift */,
+				01119B672962FA5C006792A3 /* TransfareViewController.swift */,
+				01119B6929630F62006792A3 /* TranfareHistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01119B632962F9CD006792A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01119B662962FA1B006792A3 /* Storyboards */,
+				01119B572962F910006792A3 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01119B642962F9DB006792A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01119B652962F9ED006792A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01119B4E2962F90F006792A3 /* AppDelegate.swift */,
+				01119B502962F90F006792A3 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		01119B662962FA1B006792A3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				01119B542962F90F006792A3 /* Main.storyboard */,
+				01119B592962F910006792A3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01119B532962F90F006792A3 /* ViewController.swift in Sources */,
+				01119B532962F90F006792A3 /* HomeViewController.swift in Sources */,
+				01119B682962FA5C006792A3 /* TransfareViewController.swift in Sources */,
 				01119B4F2962F90F006792A3 /* AppDelegate.swift in Sources */,
 				01119B512962F90F006792A3 /* SceneDelegate.swift in Sources */,
+				01119B6A29630F62006792A3 /* TranfareHistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
