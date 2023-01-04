@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Customer.swift
 //  Basic Banking App
 //
 //  Created by Khater on 1/2/23.
@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct User{
+struct Customer{
     let id: Int64
     let name: String
     let email: String

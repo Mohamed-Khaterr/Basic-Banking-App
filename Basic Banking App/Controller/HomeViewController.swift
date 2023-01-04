@@ -9,8 +9,58 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    let dbManager = DBManager()
+    var selectedCustomer: Customer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(UserTableViewCell.nib(), forCellReuseIdentifier: UserTableViewCell.idenifier)
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+    // Show Transcation History
+    @IBAction func historyButtonPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "fromHomeToTranscations", sender: self)
+    }
+    
+    // Transfer Money
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let transferVC = segue.destination as? TransferViewController{
+            transferVC.selectedSender =  selectedCustomer
+        }
+    }
+}
+
+
+// MARK: - UITableView DataSource
+extension HomeViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Accounts.customers.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.idenifier, for: indexPath) as! UserTableViewCell
+        cell.setup(customer: Accounts.customers[indexPath.row])
+        return cell
+    }
+}
+
+
+// MARK: - UITableView Delegate
+extension HomeViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        selectedCustomer = Accounts.customers[indexPath.row]
+        performSegue(withIdentifier: "formHomeToTransfer", sender: self)
     }
 }
 

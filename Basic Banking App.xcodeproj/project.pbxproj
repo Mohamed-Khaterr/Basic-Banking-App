@@ -13,11 +13,16 @@
 		01119B562962F90F006792A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01119B542962F90F006792A3 /* Main.storyboard */; };
 		01119B582962F910006792A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01119B572962F910006792A3 /* Assets.xcassets */; };
 		01119B5B2962F910006792A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01119B592962F910006792A3 /* LaunchScreen.storyboard */; };
-		01119B682962FA5C006792A3 /* TransfareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B672962FA5C006792A3 /* TransfareViewController.swift */; };
-		01119B6A29630F62006792A3 /* TranfareHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B6929630F62006792A3 /* TranfareHistoryViewController.swift */; };
+		01119B682962FA5C006792A3 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B672962FA5C006792A3 /* TransferViewController.swift */; };
+		01119B6A29630F62006792A3 /* TranscationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B6929630F62006792A3 /* TranscationViewController.swift */; };
 		01119B6E296318CF006792A3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B6D296318CF006792A3 /* DBManager.swift */; };
-		01119B70296321F7006792A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B6F296321F7006792A3 /* User.swift */; };
-		01119B7229633B55006792A3 /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B7129633B55006792A3 /* Transfer.swift */; };
+		01119B70296321F7006792A3 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B6F296321F7006792A3 /* Customer.swift */; };
+		01119B7229633B55006792A3 /* Transction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B7129633B55006792A3 /* Transction.swift */; };
+		01119B75296340D1006792A3 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B73296340D1006792A3 /* UserTableViewCell.swift */; };
+		01119B76296340D1006792A3 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01119B74296340D1006792A3 /* UserTableViewCell.xib */; };
+		01119B7A29634815006792A3 /* TransctionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B7829634815006792A3 /* TransctionTableViewCell.swift */; };
+		01119B7B29634815006792A3 /* TransctionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01119B7929634815006792A3 /* TransctionTableViewCell.xib */; };
+		01EBBEB02965B2F4000EC6EB /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBBEAF2965B2F4000EC6EB /* Accounts.swift */; };
 		5DD3BD311F75D13E7B9A0A87 /* Pods_Basic_Banking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948234CCC2C886C003D5C885 /* Pods_Basic_Banking_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,11 +35,16 @@
 		01119B572962F910006792A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01119B5A2962F910006792A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01119B5C2962F910006792A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01119B672962FA5C006792A3 /* TransfareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfareViewController.swift; sourceTree = "<group>"; };
-		01119B6929630F62006792A3 /* TranfareHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranfareHistoryViewController.swift; sourceTree = "<group>"; };
+		01119B672962FA5C006792A3 /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		01119B6929630F62006792A3 /* TranscationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscationViewController.swift; sourceTree = "<group>"; };
 		01119B6D296318CF006792A3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
-		01119B6F296321F7006792A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		01119B7129633B55006792A3 /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
+		01119B6F296321F7006792A3 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		01119B7129633B55006792A3 /* Transction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transction.swift; sourceTree = "<group>"; };
+		01119B73296340D1006792A3 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		01119B74296340D1006792A3 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		01119B7829634815006792A3 /* TransctionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransctionTableViewCell.swift; sourceTree = "<group>"; };
+		01119B7929634815006792A3 /* TransctionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransctionTableViewCell.xib; sourceTree = "<group>"; };
+		01EBBEAF2965B2F4000EC6EB /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		948234CCC2C886C003D5C885 /* Pods_Basic_Banking_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Basic_Banking_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F4C1325282E545DF928456 /* Pods-Basic Banking App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basic Banking App.debug.xcconfig"; path = "Target Support Files/Pods-Basic Banking App/Pods-Basic Banking App.debug.xcconfig"; sourceTree = "<group>"; };
 		E40EBA7B361529793E840B50 /* Pods-Basic Banking App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basic Banking App.release.xcconfig"; path = "Target Support Files/Pods-Basic Banking App/Pods-Basic Banking App.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,8 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				01119B522962F90F006792A3 /* HomeViewController.swift */,
-				01119B672962FA5C006792A3 /* TransfareViewController.swift */,
-				01119B6929630F62006792A3 /* TranfareHistoryViewController.swift */,
+				01119B6929630F62006792A3 /* TranscationViewController.swift */,
+				01119B672962FA5C006792A3 /* TransferViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,8 +105,10 @@
 		01119B632962F9CD006792A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				01119B662962FA1B006792A3 /* Storyboards */,
 				01119B572962F910006792A3 /* Assets.xcassets */,
+				01119B662962FA1B006792A3 /* Storyboards */,
+				01119B77296347FA006792A3 /* TranscationCell */,
+				01EBBEB12965C02A000EC6EB /* UsersCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,8 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				01119B6D296318CF006792A3 /* DBManager.swift */,
-				01119B6F296321F7006792A3 /* User.swift */,
-				01119B7129633B55006792A3 /* Transfer.swift */,
+				01EBBEAF2965B2F4000EC6EB /* Accounts.swift */,
+				01119B6F296321F7006792A3 /* Customer.swift */,
+				01119B7129633B55006792A3 /* Transction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +140,24 @@
 				01119B592962F910006792A3 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		01119B77296347FA006792A3 /* TranscationCell */ = {
+			isa = PBXGroup;
+			children = (
+				01119B7829634815006792A3 /* TransctionTableViewCell.swift */,
+				01119B7929634815006792A3 /* TransctionTableViewCell.xib */,
+			);
+			path = TranscationCell;
+			sourceTree = "<group>";
+		};
+		01EBBEB12965C02A000EC6EB /* UsersCell */ = {
+			isa = PBXGroup;
+			children = (
+				01119B73296340D1006792A3 /* UserTableViewCell.swift */,
+				01119B74296340D1006792A3 /* UserTableViewCell.xib */,
+			);
+			path = UsersCell;
 			sourceTree = "<group>";
 		};
 		4684B0AD62AE4B45B2A6F8C5 /* Pods */ = {
@@ -206,6 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01119B76296340D1006792A3 /* UserTableViewCell.xib in Resources */,
+				01119B7B29634815006792A3 /* TransctionTableViewCell.xib in Resources */,
 				01119B5B2962F910006792A3 /* LaunchScreen.storyboard in Resources */,
 				01119B582962F910006792A3 /* Assets.xcassets in Resources */,
 				01119B562962F90F006792A3 /* Main.storyboard in Resources */,
@@ -262,13 +295,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				01119B532962F90F006792A3 /* HomeViewController.swift in Sources */,
+				01119B75296340D1006792A3 /* UserTableViewCell.swift in Sources */,
 				01119B6E296318CF006792A3 /* DBManager.swift in Sources */,
-				01119B682962FA5C006792A3 /* TransfareViewController.swift in Sources */,
+				01119B682962FA5C006792A3 /* TransferViewController.swift in Sources */,
 				01119B4F2962F90F006792A3 /* AppDelegate.swift in Sources */,
 				01119B512962F90F006792A3 /* SceneDelegate.swift in Sources */,
-				01119B6A29630F62006792A3 /* TranfareHistoryViewController.swift in Sources */,
-				01119B7229633B55006792A3 /* Transfer.swift in Sources */,
-				01119B70296321F7006792A3 /* User.swift in Sources */,
+				01119B7A29634815006792A3 /* TransctionTableViewCell.swift in Sources */,
+				01EBBEB02965B2F4000EC6EB /* Accounts.swift in Sources */,
+				01119B6A29630F62006792A3 /* TranscationViewController.swift in Sources */,
+				01119B7229633B55006792A3 /* Transction.swift in Sources */,
+				01119B70296321F7006792A3 /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

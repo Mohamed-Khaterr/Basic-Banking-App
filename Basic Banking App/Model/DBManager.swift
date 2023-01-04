@@ -23,27 +23,28 @@ class DBManager {
             let db = try Connection(fileURL.path)
             self.db = db
             
-//            createUserTable()
-//            createTransferTable()
+            // Create Tables if there is no tables
+            createUserTable()
+            createTransferTable()
             
         } catch {
             print(error)
         }
     }
     
-    public func transferMoney(from senderId: Int, to receiverId: Int, amount: Int, compeletion: (Error?) -> Void){
+    public func transferMoney(from senderId: Int64, to receiverId: Int64, amount: Int64, compeletion: (Error?) -> Void){
         do {
             let sender = try db.prepare("SELECT balance FROM users WHERE id = \(senderId)")
             let recevier = try db.prepare("SELECT balance FROM users WHERE id = \(receiverId)")
             
-            var senderBalance = 0
+            var senderBalance: Int64 = 0
             for element in sender{
-                senderBalance = Int(element[0] as! Int64)
+                senderBalance = element[0] as! Int64
             }
             
-            var receiverBalance = 0
+            var receiverBalance: Int64 = 0
             for element in recevier{
-                receiverBalance = Int(element[0] as! Int64)
+                receiverBalance = element[0] as! Int64
             }
             
             let newSenderBalance = senderBalance - amount
@@ -54,7 +55,7 @@ class DBManager {
                 return
             }
             
-            addNewTransfer(sender: senderId, receiver: receiverId, amount: amount)
+            addNewTransferRecord(sender: senderId, receiver: receiverId, amount: amount)
             
             _ = try db.run("UPDATE users SET balance = \(newSenderBalance) WHERE id = \(senderId)")
             _ = try db.run("UPDATE users SET balance = \(newReceiverBalance) WHERE id = \(receiverId)")
@@ -66,7 +67,7 @@ class DBManager {
         }
     }
     
-    private func addNewTransfer(sender: Int, receiver: Int, amount: Int){
+    private func addNewTransferRecord(sender: Int64, receiver: Int64, amount: Int64){
         do {
             let stmt = try db.prepare("INSERT INTO transfers (senderId, receiverId, amount) VALUES (?, ?, ?)")
             try stmt.run([sender, receiver, amount])
@@ -76,8 +77,8 @@ class DBManager {
         }
     }
     
-    public func getUsers() -> [User]{
-        var users: [User] = []
+    public func getUsers() -> [Customer]{
+        var users: [Customer] = []
         
         do {
             let stmt = try db.prepare("SELECT * FROM users")
@@ -88,7 +89,7 @@ class DBManager {
                 let email = element[2] as! String
                 let balance = element[3] as! Int64
                 
-                let user = User(id: id, name: name, email: email, balance: balance)
+                let user = Customer(id: id, name: name, email: email, balance: balance)
                 users.append(user)
             }
             
@@ -100,8 +101,8 @@ class DBManager {
 
 
 
-    public func getTransfers() -> [Transfer]{
-        var transfers: [Transfer] = []
+    public func getTransfers() -> [Transction]{
+        var transfers: [Transction] = []
         do {
             let stmt = try db.prepare("SELECT * FROM transfers")
 
@@ -111,7 +112,7 @@ class DBManager {
                 let receiver = element[2] as! Int64
                 let amount = element[3] as! Int64
                 
-                let transfer = Transfer(id: id, sender: sender, receiver: receiver, amount: amount)
+                let transfer = Transction(id: id, sender: sender, receiver: receiver, amount: amount)
                 transfers.append(transfer)
             }
             
