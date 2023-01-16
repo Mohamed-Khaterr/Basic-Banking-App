@@ -16,23 +16,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="354" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nwV-EX-Wkm">
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nwV-EX-Wkm">
                         <rect key="frame" x="16" y="0.0" width="322" height="50"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="KKD-tF-8lH">
-                                <rect key="frame" x="0.0" y="0.0" width="102" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="cYe-ah-TRB">
+                                <rect key="frame" x="0.0" y="0.0" width="256" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="cYe-ah-TRB">
-                                <rect key="frame" x="110" y="0.0" width="102" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjZ-ym-PeJ">
-                                <rect key="frame" x="220" y="0.0" width="102" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" text="amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjZ-ym-PeJ">
+                                <rect key="frame" x="264" y="0.0" width="58" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,7 +48,6 @@
             <connections>
                 <outlet property="amountLabel" destination="sjZ-ym-PeJ" id="Dvo-Jg-qEI"/>
                 <outlet property="receiverLabel" destination="cYe-ah-TRB" id="S0s-6Y-KVR"/>
-                <outlet property="senderLabel" destination="KKD-tF-8lH" id="bXw-WN-G2b"/>
             </connections>
             <point key="canvasLocation" x="156.52173913043478" y="147.32142857142856"/>
         </tableViewCell>

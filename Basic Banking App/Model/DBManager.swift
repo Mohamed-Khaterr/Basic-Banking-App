@@ -136,7 +136,7 @@ class DBManager {
 
             for element in stmt{
                 let id = element[0] as! Int64
-                let sender = element[1] as! Int64
+                let sender = element[1] as? Int64
                 let receiver = element[2] as! Int64
                 let amount = element[3] as! Int64
                 
@@ -178,7 +178,7 @@ extension DBManager {
     private func createTransferTable() {
         let transfers = Table("transfers")
         let id = Expression<Int>("id")
-        let senderId = Expression<Int>("senderId")
+        let senderId = Expression<Int?>("senderId")
         let receiverId = Expression<Int>("receiverId")
         let amount = Expression<Int>("amount")
         

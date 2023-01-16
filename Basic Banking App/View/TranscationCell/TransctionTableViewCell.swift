@@ -8,8 +8,7 @@
 import UIKit
 
 class TransctionTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var senderLabel: UILabel!
+    
     @IBOutlet weak var receiverLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
     
@@ -19,9 +18,8 @@ class TransctionTableViewCell: UITableViewCell {
         return UINib(nibName: idenifier, bundle: nil)
     }
     
-    func setup(sender: String, receiver: String, amount: Int){
-        senderLabel.text = sender
+    func setup(receiver: String, amount: Int){
         receiverLabel.text = receiver
-        amountLabel.text = "\(amount)$"
+        amountLabel.text = "+ \(amount)$"
     }
 }

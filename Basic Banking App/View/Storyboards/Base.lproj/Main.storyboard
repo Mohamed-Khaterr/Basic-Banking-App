@@ -123,22 +123,16 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8Dj-I1-3FU">
-                                <rect key="frame" x="16" y="44" width="288" height="40"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5n-o7-8gR">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBx-dQ-zhX">
-                                        <rect key="frame" x="101" y="0.0" width="86" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBx-dQ-zhX">
+                                        <rect key="frame" x="0.0" y="0.0" width="152.5" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDB-4W-AT0">
-                                        <rect key="frame" x="202" y="0.0" width="86" height="40"/>
+                                        <rect key="frame" x="167.5" y="0.0" width="152.5" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -152,13 +146,13 @@
                         <viewLayoutGuide key="safeArea" id="m8G-cz-jRn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="m8G-cz-jRn" firstAttribute="trailing" secondItem="8Dj-I1-3FU" secondAttribute="trailing" constant="16" id="5O7-3Q-9Hy"/>
+                            <constraint firstItem="m8G-cz-jRn" firstAttribute="trailing" secondItem="8Dj-I1-3FU" secondAttribute="trailing" id="5O7-3Q-9Hy"/>
                             <constraint firstItem="m8G-cz-jRn" firstAttribute="trailing" secondItem="c4w-W4-u1M" secondAttribute="trailing" id="HgG-Fi-ZB7"/>
                             <constraint firstItem="m8G-cz-jRn" firstAttribute="bottom" secondItem="c4w-W4-u1M" secondAttribute="bottom" id="O0g-MN-BAz"/>
                             <constraint firstItem="c4w-W4-u1M" firstAttribute="leading" secondItem="m8G-cz-jRn" secondAttribute="leading" id="XBb-Lh-DM8"/>
                             <constraint firstItem="8Dj-I1-3FU" firstAttribute="top" secondItem="m8G-cz-jRn" secondAttribute="top" id="YfK-Jf-vab"/>
                             <constraint firstItem="c4w-W4-u1M" firstAttribute="top" secondItem="8Dj-I1-3FU" secondAttribute="bottom" id="ntu-iv-Ra4"/>
-                            <constraint firstItem="8Dj-I1-3FU" firstAttribute="leading" secondItem="m8G-cz-jRn" secondAttribute="leading" constant="16" id="qCX-sz-eoh"/>
+                            <constraint firstItem="8Dj-I1-3FU" firstAttribute="leading" secondItem="m8G-cz-jRn" secondAttribute="leading" id="qCX-sz-eoh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Transcations History" id="kat-WQ-EKF"/>
@@ -168,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1si-5V-uIk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773.913043478261" y="95.758928571428569"/>
+            <point key="canvasLocation" x="1773.75" y="95.070422535211264"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KBB-O8-BqK">

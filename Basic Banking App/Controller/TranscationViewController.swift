@@ -34,11 +34,11 @@ extension TranscationViewController: UITableViewDataSource{
         let transcation = Accounts.transctions[indexPath.row]
         
         // Get sender ID
-        let sender = Accounts.customers.filter({ $0.id == transcation.sender })[0]
+//        let sender = Accounts.customers.filter({ $0.id == transcation.sender })[0]
         // Get Receiver ID
         let receiver = Accounts.customers.filter({ $0.id == transcation.receiver })[0]
         
-        cell.setup(sender: sender.name, receiver: receiver.name, amount: Int(transcation.amount))
+        cell.setup(receiver: receiver.name, amount: Int(transcation.amount))
         
         return cell
     }
