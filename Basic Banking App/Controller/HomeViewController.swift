@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let dbManager = DBManager()
-    var selectedCustomer: Customer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +30,11 @@ class HomeViewController: UIViewController {
     @IBAction func historyButtonPressed(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "fromHomeToTranscations", sender: self)
     }
+    
+    @IBAction func plusButtonPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "formHomeToTransfer", sender: self)
+    }
+    
 }
 
 
@@ -52,8 +56,6 @@ extension HomeViewController: UITableViewDataSource{
 extension HomeViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        selectedCustomer = Accounts.customers[indexPath.row]
-        performSegue(withIdentifier: "formHomeToTransfer", sender: self)
     }
 }
 

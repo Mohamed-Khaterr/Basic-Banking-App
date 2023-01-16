@@ -31,6 +31,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Customers" id="ceZ-9x-dym">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="plus" catalog="system" id="qD0-Rn-NPq">
+                            <connections>
+                                <action selector="plusButtonPressed:" destination="BYZ-38-t0r" id="ffZ-Xm-5He"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="list.bullet" catalog="system" id="7go-Ca-2Tt">
                             <connections>
                                 <action selector="historyButtonPressed:" destination="BYZ-38-t0r" id="ydd-yf-WcK"/>
@@ -189,6 +194,7 @@
     </scenes>
     <resources>
         <image name="list.bullet" catalog="system" width="32" height="32"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
