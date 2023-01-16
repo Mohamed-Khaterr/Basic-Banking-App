@@ -14,7 +14,6 @@ class TransferViewController: UIViewController {
     
     let dbManager = DBManager()
     var pickerView = UIPickerView()
-    var selectedSender: Customer?
     var selectedReceiver: Customer?
     
     override func viewDidLoad() {
@@ -35,8 +34,8 @@ class TransferViewController: UIViewController {
             return
         }
         
-        if let selectedSender = selectedSender, let selectedReceiver = selectedReceiver {
-            dbManager.transferMoney(from: selectedSender.id, to: selectedReceiver.id, amount: Int64(amount)!) { [weak self] error in
+        if let selectedReceiver = selectedReceiver {
+            dbManager.transferMoney(to: selectedReceiver.id, amount: Int64(amount)!) { [weak self] error in
                 guard let self = self else { return }
                 
                 if let error = error {

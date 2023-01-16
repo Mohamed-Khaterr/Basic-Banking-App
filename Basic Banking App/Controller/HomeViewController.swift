@@ -31,13 +31,6 @@ class HomeViewController: UIViewController {
     @IBAction func historyButtonPressed(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "fromHomeToTranscations", sender: self)
     }
-    
-    // Transfer Money
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let transferVC = segue.destination as? TransferViewController{
-            transferVC.selectedSender =  selectedCustomer
-        }
-    }
 }
 
 
