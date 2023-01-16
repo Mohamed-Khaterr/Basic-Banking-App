@@ -25,7 +25,7 @@ class UserTableViewCell: UITableViewCell {
     }
     
     func setup(customer: Customer){
-        idLabel.text = String(customer.id)
+        idLabel.text = "ID " + String(customer.id)
         nameLabel.text = customer.name
         emailLabel.text = customer.email
         balanceLabel.text = "\(customer.balance)$"
