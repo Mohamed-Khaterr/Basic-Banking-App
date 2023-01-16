@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nwV-EX-Wkm">
-                        <rect key="frame" x="16" y="0.0" width="322" height="50"/>
+                        <rect key="frame" x="16" y="8" width="322" height="50"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="cYe-ah-TRB">
                                 <rect key="frame" x="0.0" y="0.0" width="256" height="50"/>
@@ -40,7 +40,7 @@
                 <constraints>
                     <constraint firstItem="nwV-EX-Wkm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="C33-td-Ieg"/>
                     <constraint firstAttribute="trailing" secondItem="nwV-EX-Wkm" secondAttribute="trailing" constant="16" id="EzA-GG-OIg"/>
-                    <constraint firstItem="nwV-EX-Wkm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ywa-cT-JNX"/>
+                    <constraint firstItem="nwV-EX-Wkm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ywa-cT-JNX"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nwV-EX-Wkm" secondAttribute="bottom" id="adT-t8-DD1"/>
                 </constraints>
             </tableViewCellContentView>

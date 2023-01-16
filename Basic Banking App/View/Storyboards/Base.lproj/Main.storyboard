@@ -31,16 +31,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Customers" id="ceZ-9x-dym">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="plus" catalog="system" id="qD0-Rn-NPq">
-                            <connections>
-                                <action selector="plusButtonPressed:" destination="BYZ-38-t0r" id="ffZ-Xm-5He"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="list.bullet" catalog="system" id="7go-Ca-2Tt">
-                            <connections>
-                                <action selector="historyButtonPressed:" destination="BYZ-38-t0r" id="ydd-yf-WcK"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="clock.arrow.circlepath" catalog="system" id="7go-Ca-2Tt">
+                                <connections>
+                                    <action selector="historyButtonPressed:" destination="BYZ-38-t0r" id="ydd-yf-WcK"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="plus" catalog="system" id="qD0-Rn-NPq">
+                                <connections>
+                                    <action selector="plusButtonPressed:" destination="BYZ-38-t0r" id="ffZ-Xm-5He"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="9EJ-PS-Hs2" id="blo-ZJ-RFm"/>
@@ -85,6 +87,11 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sendButtonPressed:" destination="rHj-2j-Jpo" eventType="touchUpInside" id="VeV-9U-bgX"/>
                                         </connections>
@@ -110,7 +117,7 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="821.65178571428567"/>
         </scene>
-        <!--Transcations History-->
+        <!--Transcations-->
         <scene sceneID="e8W-v6-a1C">
             <objects>
                 <viewController id="s3m-vo-Mvd" customClass="TranscationViewController" customModule="Basic_Banking_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -119,7 +126,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c4w-W4-u1M">
-                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8Dj-I1-3FU">
@@ -127,13 +134,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBx-dQ-zhX">
                                         <rect key="frame" x="0.0" y="0.0" width="152.5" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDB-4W-AT0">
                                         <rect key="frame" x="167.5" y="0.0" width="152.5" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -147,15 +154,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="m8G-cz-jRn" firstAttribute="trailing" secondItem="8Dj-I1-3FU" secondAttribute="trailing" id="5O7-3Q-9Hy"/>
-                            <constraint firstItem="m8G-cz-jRn" firstAttribute="trailing" secondItem="c4w-W4-u1M" secondAttribute="trailing" id="HgG-Fi-ZB7"/>
+                            <constraint firstItem="8Dj-I1-3FU" firstAttribute="trailing" secondItem="c4w-W4-u1M" secondAttribute="trailing" id="HgG-Fi-ZB7"/>
                             <constraint firstItem="m8G-cz-jRn" firstAttribute="bottom" secondItem="c4w-W4-u1M" secondAttribute="bottom" id="O0g-MN-BAz"/>
-                            <constraint firstItem="c4w-W4-u1M" firstAttribute="leading" secondItem="m8G-cz-jRn" secondAttribute="leading" id="XBb-Lh-DM8"/>
+                            <constraint firstItem="c4w-W4-u1M" firstAttribute="leading" secondItem="waq-3e-6kh" secondAttribute="leading" id="XBb-Lh-DM8"/>
                             <constraint firstItem="8Dj-I1-3FU" firstAttribute="top" secondItem="m8G-cz-jRn" secondAttribute="top" id="YfK-Jf-vab"/>
-                            <constraint firstItem="c4w-W4-u1M" firstAttribute="top" secondItem="8Dj-I1-3FU" secondAttribute="bottom" id="ntu-iv-Ra4"/>
+                            <constraint firstItem="c4w-W4-u1M" firstAttribute="top" secondItem="8Dj-I1-3FU" secondAttribute="bottom" constant="8" id="ntu-iv-Ra4"/>
                             <constraint firstItem="8Dj-I1-3FU" firstAttribute="leading" secondItem="m8G-cz-jRn" secondAttribute="leading" id="qCX-sz-eoh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Transcations History" id="kat-WQ-EKF"/>
+                    <navigationItem key="navigationItem" title="Transcations" id="kat-WQ-EKF"/>
                     <connections>
                         <outlet property="tableView" destination="c4w-W4-u1M" id="TUq-AH-6vS"/>
                     </connections>
@@ -187,7 +194,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="list.bullet" catalog="system" width="32" height="32"/>
+        <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

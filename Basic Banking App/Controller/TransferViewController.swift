@@ -21,6 +21,8 @@ class TransferViewController: UIViewController {
         pickerView.delegate = self
         pickerView.dataSource = self
         receiverLabel.inputView = pickerView
+        
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     

@@ -25,9 +25,9 @@ class CustomerTableViewCell: UITableViewCell {
     }
     
     func setup(customer: Customer){
-        idLabel.text = "ID " + String(customer.id)
         nameLabel.text = customer.name
-        emailLabel.text = customer.email
+        emailLabel.text = customer.email + ","
+        idLabel.text = "ID: " + String(customer.id)
         balanceLabel.text = "\(customer.balance)$"
     }
 }

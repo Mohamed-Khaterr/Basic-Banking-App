@@ -19,6 +19,8 @@ class TranscationViewController: UIViewController {
         tableView.register(TransctionTableViewCell.nib(), forCellReuseIdentifier: TransctionTableViewCell.idenifier)
         tableView.delegate = self
         tableView.dataSource = self
+        
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
 }
 
