@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UserTableViewCell.nib(), forCellReuseIdentifier: UserTableViewCell.idenifier)
+        tableView.register(CustomerTableViewCell.nib(), forCellReuseIdentifier: CustomerTableViewCell.idenifier)
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -48,7 +48,7 @@ extension HomeViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.idenifier, for: indexPath) as! UserTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomerTableViewCell.idenifier, for: indexPath) as! CustomerTableViewCell
         cell.setup(customer: Accounts.customers[indexPath.row])
         return cell
     }

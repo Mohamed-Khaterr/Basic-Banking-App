@@ -18,8 +18,8 @@
 		01119B6E296318CF006792A3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B6D296318CF006792A3 /* DBManager.swift */; };
 		01119B70296321F7006792A3 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B6F296321F7006792A3 /* Customer.swift */; };
 		01119B7229633B55006792A3 /* Transction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B7129633B55006792A3 /* Transction.swift */; };
-		01119B75296340D1006792A3 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B73296340D1006792A3 /* UserTableViewCell.swift */; };
-		01119B76296340D1006792A3 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01119B74296340D1006792A3 /* UserTableViewCell.xib */; };
+		01119B75296340D1006792A3 /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B73296340D1006792A3 /* CustomerTableViewCell.swift */; };
+		01119B76296340D1006792A3 /* CustomerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01119B74296340D1006792A3 /* CustomerTableViewCell.xib */; };
 		01119B7A29634815006792A3 /* TransctionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01119B7829634815006792A3 /* TransctionTableViewCell.swift */; };
 		01119B7B29634815006792A3 /* TransctionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01119B7929634815006792A3 /* TransctionTableViewCell.xib */; };
 		01EBBEB02965B2F4000EC6EB /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBBEAF2965B2F4000EC6EB /* Accounts.swift */; };
@@ -40,8 +40,8 @@
 		01119B6D296318CF006792A3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		01119B6F296321F7006792A3 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		01119B7129633B55006792A3 /* Transction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transction.swift; sourceTree = "<group>"; };
-		01119B73296340D1006792A3 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
-		01119B74296340D1006792A3 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		01119B73296340D1006792A3 /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewCell.swift; sourceTree = "<group>"; };
+		01119B74296340D1006792A3 /* CustomerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerTableViewCell.xib; sourceTree = "<group>"; };
 		01119B7829634815006792A3 /* TransctionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransctionTableViewCell.swift; sourceTree = "<group>"; };
 		01119B7929634815006792A3 /* TransctionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransctionTableViewCell.xib; sourceTree = "<group>"; };
 		01EBBEAF2965B2F4000EC6EB /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
@@ -154,8 +154,8 @@
 		01EBBEB12965C02A000EC6EB /* UsersCell */ = {
 			isa = PBXGroup;
 			children = (
-				01119B73296340D1006792A3 /* UserTableViewCell.swift */,
-				01119B74296340D1006792A3 /* UserTableViewCell.xib */,
+				01119B73296340D1006792A3 /* CustomerTableViewCell.swift */,
+				01119B74296340D1006792A3 /* CustomerTableViewCell.xib */,
 			);
 			path = UsersCell;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01119B76296340D1006792A3 /* UserTableViewCell.xib in Resources */,
+				01119B76296340D1006792A3 /* CustomerTableViewCell.xib in Resources */,
 				01119B7B29634815006792A3 /* TransctionTableViewCell.xib in Resources */,
 				01119B5B2962F910006792A3 /* LaunchScreen.storyboard in Resources */,
 				01119B582962F910006792A3 /* Assets.xcassets in Resources */,
@@ -295,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01119B532962F90F006792A3 /* HomeViewController.swift in Sources */,
-				01119B75296340D1006792A3 /* UserTableViewCell.swift in Sources */,
+				01119B75296340D1006792A3 /* CustomerTableViewCell.swift in Sources */,
 				01119B6E296318CF006792A3 /* DBManager.swift in Sources */,
 				01119B682962FA5C006792A3 /* TransferViewController.swift in Sources */,
 				01119B4F2962F90F006792A3 /* AppDelegate.swift in Sources */,
