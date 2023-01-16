@@ -67,10 +67,38 @@ class DBManager {
         }
     }
     
-    private func addNewTransferRecord(sender: Int64, receiver: Int64, amount: Int64){
+    public func transferMoney(to receiverId: Int64, amount: Int64, compeletion: (Error?) -> Void){
         do {
-            let stmt = try db.prepare("INSERT INTO transfers (senderId, receiverId, amount) VALUES (?, ?, ?)")
-            try stmt.run([sender, receiver, amount])
+            let recevier = try db.prepare("SELECT balance FROM users WHERE id = \(receiverId)")
+            
+            var receiverBalance: Int64 = 0
+            for element in recevier{
+                receiverBalance = element[0] as! Int64
+            }
+            
+            let newReceiverBalance = receiverBalance + amount
+            
+            addNewTransferRecord(receiver: receiverId, amount: amount)
+            
+            _ = try db.run("UPDATE users SET balance = \(newReceiverBalance) WHERE id = \(receiverId)")
+            
+            compeletion(nil)
+            
+        } catch {
+            compeletion(error)
+        }
+    }
+    
+    private func addNewTransferRecord(sender: Int64? = nil, receiver: Int64, amount: Int64){
+        do {
+            if let sender = sender {
+                let stmt = try db.prepare("INSERT INTO transfers (senderId, receiverId, amount) VALUES (?, ?, ?)")
+                try stmt.run([sender, receiver, amount])
+                
+            }else{
+                let stmt = try db.prepare("INSERT INTO transfers (receiverId, amount) VALUES (?, ?)")
+                try stmt.run([receiver, amount])
+            }
             
         } catch {
             print(error)
