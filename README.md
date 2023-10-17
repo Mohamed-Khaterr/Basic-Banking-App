@@ -7,6 +7,8 @@ Youtube demo video:
 
 [![Demo Video](https://img.youtube.com/vi/Gvs5aWLHoUY/0.jpg)](https://youtu.be/Gvs5aWLHoUY)
 
+<!--
 Old version:
 
 [![Demo Video](https://img.youtube.com/vi/LMrU2STwPUk/0.jpg)](https://youtu.be/LMrU2STwPUk)
+-->
